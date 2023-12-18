@@ -11,8 +11,7 @@ local require = function(module)
     end 
 end
 
-local username = 'vxsqi' -- input username here
-local midi = require(script.Parent.midiplayer)(username)
+local midi = require(script.Parent.midiplayer)
 local song = midi.new("https://www.angelfire.com/nb/nonstopbounce/euro2/djsammyandyanou_heaven.mid")
 
 song:Play()
