@@ -12,7 +12,7 @@ local require = function(module)
 end
 
 local username = 'vxsqi' -- input username here
-local midi = require("https://vxsqi.tk/scripts/midi/midiplayer.lua")(username)
+local midi = require(script.Parent.midiplayer)(username)
 local song = midi.new("https://www.angelfire.com/nb/nonstopbounce/euro2/djsammyandyanou_heaven.mid")
 
 song:Play()
