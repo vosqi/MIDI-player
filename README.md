@@ -1,0 +1,1 @@
+Midiplayer designed to use in SB games. It uses LuaMidi from luarocks to convert a midi file into a dynamic file that is readable by the LuaMidi module. It then converts the file to a table of scores that provide time, channel, volume, etc.
