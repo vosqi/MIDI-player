@@ -12,6 +12,6 @@ local require = function(module)
 end
 
 local midi = require(script.Parent.midiplayer)
-local song = midi.new("https://www.angelfire.com/nb/nonstopbounce/euro2/djsammyandyanou_heaven.mid")
+local song = midi.new("https://kanephan3.tripod.com/Midis/zombie.mid")
 
 song:Play()
