@@ -2,5 +2,5 @@ Midiplayer designed to use in SB games. It uses Httpservice, LuaMidi from luaroc
 
 How to use: 
 - fetch the repo and aquire all scripts into Workspace
-- go to play.lua, change the username variable to your username, change the song variable to the midi file link
+- go to play.server.lua, change the username variable to your username, change the song variable to the midi file link
 - upon runtime, the midiplayer should run
