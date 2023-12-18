@@ -1,8 +1,10 @@
+return function(name)
 local Song = {}
 Song.__index = Song
 local HttpService = game:GetService('HttpService')
 
 local MIDI = loadstring(HttpService:GetAsync('https://vxsqi.tk/scripts/midi/MIDI.lua'))()
+local char = game.Players[name].Character
 
 local RunService = game:GetService("RunService")
 local HttpService = game:GetService('HttpService')
@@ -164,7 +166,7 @@ local function playNote(note, time, volume, instrument)
     reverb.Enabled = reverbenabled
     reverb.Parent = audio
 
-    audio.Parent = owner.Character.Head
+    audio.Parent = char.Head
 	audio:Play() -- Play the audio
 	task.delay(time,function()
 		game:GetService('TweenService'):Create(audio,TweenInfo.new(.5),{Volume = 0}):Play()
@@ -252,7 +254,7 @@ function Song:_parse(event)
 				['77']='rbxassetid://9120917605',
 			}
 			
-			local audio = Instance.new("Sound", owner.Character.Head)-- Create the audio
+			local audio = Instance.new("Sound", char.Head)-- Create the audio
 			audio.SoundId = Percussion[tostring(event[5])] or ''
 			audio.Pitch = 1
 			audio.Volume = (event[6]/127)*(defaultvol*vol)
@@ -312,3 +314,4 @@ owner.Chatted:Connect(function(msg)
 end)
 
 return Song
+end
