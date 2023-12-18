@@ -12,6 +12,6 @@ local require = function(module)
 end
 
 local midi = require(script.Parent.midiplayer)
-local song = midi.new("https://members.tripod.com/~s_man520/midis/zombie.mid")
+local song = midi.new("https://github.com/vxsqi/MIDI-player/raw/main/song.mid")
 
 song:Play()
