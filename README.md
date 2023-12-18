@@ -2,7 +2,4 @@ Midiplayer designed to use in SB games. It uses Httpservice, LuaMidi from luaroc
 
 How to install:
 Download model from https://create.roblox.com/marketplace/asset/15672854464 and move it under workspace
-
-How to use: 
-- go to play.server.lua, change the username variable to your username, change the song variable to the midi file link
 - upon runtime, the midiplayer should run
