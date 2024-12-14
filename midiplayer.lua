@@ -282,6 +282,8 @@ Note:
 			EqualizerSoundEffect.Parent = audio
 
 			audio:Play()
+
+			game.Debris:AddItem(audio,3)
 		elseif event[4] == 9 then
 			playNote(event[5]-35,event[3] / self.Timebase,event[6]/127, instruments['Baritone'])
 		else
